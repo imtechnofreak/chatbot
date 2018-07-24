@@ -1,0 +1,307 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_interested
+- utter_ask_more
+- utter_prevention
+- utter_ack
+- utter_deflect
+- utter_topic_change
+- utter_tutorial
+- utter_agree
+- utter_personal_questions
+- utter_family_questions
+- utter_topic_confirm
+- utter_ask_first_time
+- utter_question_start
+- utter_weather_info
+- utter_weather_comment
+- utter_weather_bad
+- utter_ask_who
+- utter_ask_people_friends
+- utter_default
+- utter_friends_questions
+- utter_ack_person
+- action_weather
+- action_family
+- action_storytelling
+- action_repeat
+- action_greeting
+- action_event
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_interested
+- utter_ask_more
+- utter_prevention
+- utter_ack
+- utter_deflect
+- utter_topic_change
+- utter_tutorial
+- utter_agree
+- utter_personal_questions
+- utter_family_questions
+- utter_topic_confirm
+- utter_ask_first_time
+- utter_question_start
+- utter_weather_info
+- utter_weather_comment
+- utter_weather_bad
+- utter_ask_who
+- utter_ask_people_friends
+- utter_default
+- utter_friends_questions
+- utter_ack_person
+- bot.ActionWeather
+- bot.ActionFamily
+- bot.ActionStorytelling
+- bot.ActionRepeat
+- bot.ActionGreeting
+- bot.ActionEvent
+config:
+  store_entities_as_slots: true
+entities:
+- topic
+- mood
+- command
+- TIME
+- GPE
+- DATE
+- ORG
+- PRODUCT
+- PERSON
+- ORDINAL
+- QUANTITY
+- CARDINAL
+- EVENT
+intents:
+- greet
+- goodbye
+- deny
+- family_intro
+- deflect
+- thank
+- affirm
+- refuse
+- ner
+- start
+- topic_change
+- suicide
+- weather_comment
+- topic_start
+- inform
+- repeat
+- family_who
+- friend_info
+slots:
+  CARDINAL:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  DATE:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  EVENT:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  GPE:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  ORDINAL:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  ORG:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  PERSON:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  PRODUCT:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  QUANTITY:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  TIME:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  city:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  command:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - repeat
+    - help
+  mood:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  person:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  temperature:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  topic:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - family
+    - storytelling
+    - weather
+  username:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ack:
+  - text: Good to know!
+  - text: That's nice to hear
+  - text: Great!
+  utter_ack_person:
+  - text: I'd love to hear more about {PERSON}
+  utter_agree:
+  - text: That's true!
+  - text: I agree with you
+  - text: That's correct
+  - text: That's right
+  - text: You are right
+  - text: I think we both agree on that
+  utter_ask_first_time:
+  - text: Is this your first time interacting with the chatbot?
+  utter_ask_more:
+  - text: That's nice, could you tell me more about that?
+  - text: That's really interesting, tell me more about that
+  - text: Great! I would like to hear more!
+  - text: What else can you tell me about that?
+  - text: What else can you say about that?
+  utter_ask_people_friends:
+  - text: Could you share something that you did with someone recently?
+  utter_ask_who:
+  - text: Who would you like to talk about today?
+  - text: Tell me about someone you know
+  - text: Could you share something that you did with someone recently?
+  utter_default:
+  - text: Please tell me more.
+  - text: Let's change focus a bit... Tell me about your family.
+  - text: Can you elaborate on that?
+  - text: Why do you say that %1?
+  - text: I see.
+  - text: Very interesting.
+  - text: I see.  And what does that tell you?
+  - text: How does that make you feel?
+  - text: How do you feel when you say that?
+  utter_deflect:
+  - text: Let me think about it
+  - text: I haven't heard of that
+  - text: I'll come back to that later
+  - text: I'm sorry, I'm not sure. Could you tell me?
+  - text: That's a good question
+  - text: I would have to link into the web for that knowledge
+  - text: I'm not sure how to answer that
+  - text: I apologize, I wasn't trained for that
+  utter_did_that_help:
+  - text: Did that help you?
+  - text: Was that helpful?
+  - text: Was that of any use?
+  utter_event_questions:
+  - text: When did that happen?
+  - text: Did you have a good time?
+  - text: Would you go again?
+  - text: Who was there with you?
+  - text: Where did that happen?
+  - text: How far is that from where you live?
+  - text: Is there a story you could tell me from that event?
+  - text: What made you want to go to that event?
+  - text: Have you ever been to something like that before?
+  utter_family_questions:
+  - text: Could you tell me more about your brother?
+  - text: Where does he live?
+  - text: What does he do for a living?
+  - text: What is he doing right now?
+  - text: How old is he?
+  - text: When is the last time you saw her?
+  - text: Do they live close to you?
+  utter_friends_questions:
+  - text: What is his name?
+  - text: When did you last see him?
+  - text: How did you meet?
+  - text: How long have you known him?
+  - text: Do you see him often?
+  - text: How would you describe him?
+  utter_goodbye:
+  - text: Goodbye!
+  - text: I'll see you next time!
+  - text: See you!
+  - text: Later!
+  - text: Goodnight
+  utter_greet:
+  - text: Hey {username}!
+  - text: Hello {username}!
+  - text: Hey there {username}!
+  utter_happy:
+  - text: Great carry on!
+  - text: Great, have a nice day!
+  - text: I'm happy to hear that!
+  utter_interested:
+  - text: That sounds great!
+  - text: Interesting!
+  - text: Cool!
+  utter_personal_questions:
+  - text: What is your name?
+  - text: Where do you reside?
+  - text: Where did you grow up?
+  - text: Do you have any siblings?
+  - text: How old are you?
+  - text: What do you do for a living?
+  - text: How long have you been there?
+  utter_prevention:
+  - text: I'm really sorry to hear that. I think you should get some help. Try visiting
+      www.mentalhealthhelpline.ca/
+  - text: 'Please be careful. Try seeking help here: https://suicidepreention.ca/need-help/'
+  - text: I'm getting worried. You should try contacting someone at 1-866-925-5454
+      or good2talk.ca
+  utter_question_start:
+  - text: What would you like to talk about?
+  - text: Is there something you would like to talk about?
+  - text: What do you feel like talking about today?
+  - text: Let's have a discussion. What do you want to talk about?
+  utter_reflect:
+  - text: Why do you need that?
+  - text: Would it help you to get that?
+  - text: How long has it been that way?
+  - text: How does that make you feel?
+  - text: Do you enjoy it being that way?
+  - text: Why do you think that?
+  - text: Why do you tell me that?
+  - text: What do you think about that?
+  - text: What else comes to your mind?
+  - text: Do you really think so?
+  - text: Please tell me more
+  - text: I see. And what does that tell you?
+  - text: How do you feel when you say that?
+  utter_topic_change:
+  - text: Alright, let's talk about something else.
+  utter_topic_confirm:
+  - text: Great, let's talk about {topic}!
+  - text: Alright, let's talk about {topic}!
+  utter_tutorial:
+  - text: I am MHealthBot and I would like to be your friend. Because I am still a
+      prototype, I can only talk with you about a few topics. We can discuss about
+      family, friends and the weather.
+  utter_weather_bad:
+  - text: Can you believe all of this rain we've been having?
+  - text: It looks like it's going to snow.
+  - text: It sure would be nice to be in Hawaii right about now.
+  - text: I hear they're calling for thunderstorms all weekend.
+  utter_weather_comment:
+  - text: Beautiful day, isn't it?
+  - text: We couldn't ask for a nicer day, could we?
+  - text: Did you order this sunshine?
+  utter_weather_info:
+  - text: It is currently {temperature} degrees celcius in {city} today!
+topics: []

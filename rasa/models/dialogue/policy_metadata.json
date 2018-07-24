@@ -1,0 +1,31 @@
+{
+  "rasa_core": "0.8.0",
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "topic",
+        "PERSON"
+      ]
+    },
+    "action_weather": {
+      "slots": [
+        "temperature",
+        "city"
+      ]
+    },
+    "action_greeting": {
+      "slots": [
+        "username"
+      ]
+    }
+  },
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "policies.policy.CustomPolicy",
+    "policies.ElizaPolicy.ElizaPolicy",
+    "policies.TfidfPolicy.TfidfPolicy",
+    "policies.SentimentPolicy.SentimentPolicy"
+  ],
+  "max_history": 3,
+  "ensemble_name": "policies.policy.NewPolicyEnsemble"
+}

@@ -1,0 +1,1156 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [
+      {
+        "synonyms": [
+          "dad",
+          "papa",
+          "daddy",
+          "pa"
+        ],
+        "value": "father"
+      },
+      {
+        "synonyms": [
+          "sissy",
+          "sista",
+          "sis"
+        ],
+        "value": "sister"
+      },
+      {
+        "synonyms": [
+          "broski",
+          "brah",
+          "bro",
+          "bruh"
+        ],
+        "value": "brother"
+      },
+      {
+        "synonyms": [
+          "ma",
+          "mom",
+          "mommy",
+          "mama"
+        ],
+        "value": "mother"
+      },
+      {
+        "synonyms": [
+          "fam",
+          "familia",
+          "famille"
+        ],
+        "value": "family"
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "i can you tell about my father",
+        "intent": "family_who"
+      },
+      {
+        "text": "my mother is a great person",
+        "intent": "family_who"
+      },
+      {
+        "text": "i have an older brother",
+        "intent": "family_who"
+      },
+      {
+        "text": "let's talk about my sister",
+        "intent": "family_who"
+      },
+      {
+        "text": "my dad is a great person",
+        "intent": "family_who"
+      },
+      {
+        "text": "I\u2019m an only child, this means I have no brothers or sisters.",
+        "intent": "family_who"
+      },
+      {
+        "text": "I have an older sister.",
+        "intent": "family_who"
+      },
+      {
+        "text": "I have a younger sister.",
+        "intent": "family_who"
+      },
+      {
+        "text": "I have two brothers.",
+        "intent": "family_who"
+      },
+      {
+        "text": "I\u2019m the oldest child",
+        "intent": "family_who"
+      },
+      {
+        "text": "I have a small family",
+        "intent": "family_who"
+      },
+      {
+        "text": "I had dinner with Michael yesterday",
+        "intent": "family_who"
+      },
+      {
+        "text": "My uncle John is a very nice person",
+        "intent": "family_who"
+      },
+      {
+        "text": "I had a family dinner last week",
+        "intent": "family_who"
+      },
+      {
+        "text": "I went to the movies with Catherine",
+        "intent": "family_who"
+      },
+      {
+        "text": "I can tell you about my friend Emma",
+        "intent": "family_who"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 14,
+            "start": 8,
+            "value": "repeat"
+          }
+        ],
+        "text": "can you repeat that for me",
+        "intent": "repeat"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 23,
+            "start": 17,
+            "value": "repeat"
+          }
+        ],
+        "text": "could you please repeat",
+        "intent": "repeat"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 6,
+            "start": 0,
+            "value": "repeat"
+          }
+        ],
+        "text": "repeat it",
+        "intent": "repeat"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 13,
+            "start": 7,
+            "value": "repeat"
+          }
+        ],
+        "text": "please repeat",
+        "intent": "repeat"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 4,
+            "start": 0,
+            "value": "help"
+          }
+        ],
+        "text": "help",
+        "intent": "repeat"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 4,
+            "start": 0,
+            "value": "help"
+          }
+        ],
+        "text": "help functionality",
+        "intent": "repeat"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 19,
+            "start": 15,
+            "value": "help"
+          }
+        ],
+        "text": "can you please help me",
+        "intent": "repeat"
+      },
+      {
+        "text": "what did you say",
+        "intent": "repeat"
+      },
+      {
+        "text": "sorry i did not get that",
+        "intent": "repeat"
+      },
+      {
+        "text": "what do you mean",
+        "intent": "repeat"
+      },
+      {
+        "text": "say that again",
+        "intent": "repeat"
+      },
+      {
+        "text": "what",
+        "intent": "repeat"
+      },
+      {
+        "text": "could not hear you",
+        "intent": "repeat"
+      },
+      {
+        "entities": [
+          {
+            "entity": "navigation",
+            "end": 6,
+            "start": 0,
+            "value": "repeat"
+          }
+        ],
+        "text": "repeat that",
+        "intent": "repeat"
+      },
+      {
+        "text": "i want to go to New York City today",
+        "intent": "ner"
+      },
+      {
+        "text": "i went to Montreal yesterday",
+        "intent": "ner"
+      },
+      {
+        "text": "start",
+        "intent": "start"
+      },
+      {
+        "text": "begin",
+        "intent": "start"
+      },
+      {
+        "text": "starting",
+        "intent": "start"
+      },
+      {
+        "text": "go",
+        "intent": "start"
+      },
+      {
+        "text": "play",
+        "intent": "start"
+      },
+      {
+        "text": "let's talk about something else",
+        "intent": "topic_change"
+      },
+      {
+        "text": "let's change topics",
+        "intent": "topic_change"
+      },
+      {
+        "text": "i don't want to talk about this anymore",
+        "intent": "topic_change"
+      },
+      {
+        "text": "change topic",
+        "intent": "topic_change"
+      },
+      {
+        "text": "hey",
+        "intent": "greet"
+      },
+      {
+        "text": "hello",
+        "intent": "greet"
+      },
+      {
+        "text": "hi",
+        "intent": "greet"
+      },
+      {
+        "text": "hello there",
+        "intent": "greet"
+      },
+      {
+        "text": "good morning",
+        "intent": "greet"
+      },
+      {
+        "text": "good evening",
+        "intent": "greet"
+      },
+      {
+        "text": "moin",
+        "intent": "greet"
+      },
+      {
+        "text": "hey there",
+        "intent": "greet"
+      },
+      {
+        "text": "let's go",
+        "intent": "greet"
+      },
+      {
+        "text": "hey dude",
+        "intent": "greet"
+      },
+      {
+        "text": "goodmorning",
+        "intent": "greet"
+      },
+      {
+        "text": "goodevening",
+        "intent": "greet"
+      },
+      {
+        "text": "good afternoon",
+        "intent": "greet"
+      },
+      {
+        "text": "what's up",
+        "intent": "greet"
+      },
+      {
+        "text": "what's good",
+        "intent": "greet"
+      },
+      {
+        "text": "cu",
+        "intent": "goodbye"
+      },
+      {
+        "text": "good by",
+        "intent": "goodbye"
+      },
+      {
+        "text": "cee you later",
+        "intent": "goodbye"
+      },
+      {
+        "text": "good night",
+        "intent": "goodbye"
+      },
+      {
+        "text": "good afternoon",
+        "intent": "goodbye"
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "have a nice day",
+        "intent": "goodbye"
+      },
+      {
+        "text": "see you around",
+        "intent": "goodbye"
+      },
+      {
+        "text": "bye bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "see you later",
+        "intent": "goodbye"
+      },
+      {
+        "text": "cya",
+        "intent": "goodbye"
+      },
+      {
+        "text": "see you",
+        "intent": "goodbye"
+      },
+      {
+        "text": "yes",
+        "intent": "affirm"
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm"
+      },
+      {
+        "text": "of course",
+        "intent": "affirm"
+      },
+      {
+        "text": "that sounds good",
+        "intent": "affirm"
+      },
+      {
+        "text": "yep",
+        "intent": "affirm"
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm"
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm"
+      },
+      {
+        "text": "ok",
+        "intent": "affirm"
+      },
+      {
+        "text": "great",
+        "intent": "affirm"
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm"
+      },
+      {
+        "text": "correct",
+        "intent": "affirm"
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm"
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm"
+      },
+      {
+        "text": "alright",
+        "intent": "affirm"
+      },
+      {
+        "text": "no",
+        "intent": "deny"
+      },
+      {
+        "text": "never",
+        "intent": "deny"
+      },
+      {
+        "text": "I don't think so",
+        "intent": "deny"
+      },
+      {
+        "text": "don't like that",
+        "intent": "deny"
+      },
+      {
+        "text": "no way",
+        "intent": "deny"
+      },
+      {
+        "text": "i don't want to",
+        "intent": "deny"
+      },
+      {
+        "text": "i refuse",
+        "intent": "deny"
+      },
+      {
+        "text": "i do not want to",
+        "intent": "deny"
+      },
+      {
+        "text": "perfect",
+        "intent": "mood_great"
+      },
+      {
+        "text": "very good",
+        "intent": "mood_great"
+      },
+      {
+        "text": "great",
+        "intent": "mood_great"
+      },
+      {
+        "text": "amazing",
+        "intent": "mood_great"
+      },
+      {
+        "text": "feeling like a king",
+        "intent": "mood_great"
+      },
+      {
+        "text": "wonderful",
+        "intent": "mood_great"
+      },
+      {
+        "text": "I am feeling very good",
+        "intent": "mood_great"
+      },
+      {
+        "text": "I am great",
+        "intent": "mood_great"
+      },
+      {
+        "text": "I am amazing",
+        "intent": "mood_great"
+      },
+      {
+        "text": "I am going to save the world",
+        "intent": "mood_great"
+      },
+      {
+        "text": "super",
+        "intent": "mood_great"
+      },
+      {
+        "text": "extremely good",
+        "intent": "mood_great"
+      },
+      {
+        "text": "so so perfect",
+        "intent": "mood_great"
+      },
+      {
+        "text": "so good",
+        "intent": "mood_great"
+      },
+      {
+        "text": "so perfect",
+        "intent": "mood_great"
+      },
+      {
+        "text": "i am happy today",
+        "intent": "mood_great"
+      },
+      {
+        "text": "my day was horrible",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "I am sad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "I don't feel very well",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "I am disappointed",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "super sad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "I'm so sad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "sad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "very sad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "unhappy",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "not so good",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "not very good",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "extremly sad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "so saad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "i am disappointed",
+        "intent": "mood_unhappy"
+      },
+      {
+        "text": "so sad",
+        "intent": "mood_unhappy"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 28,
+            "start": 21,
+            "value": "weather"
+          }
+        ],
+        "text": "let's talk about the weather",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 32,
+            "start": 25,
+            "value": "weather"
+          }
+        ],
+        "text": "i want to talk about the weather",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 7,
+            "start": 0,
+            "value": "weather"
+          }
+        ],
+        "text": "weather talk",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 7,
+            "start": 0,
+            "value": "weather"
+          }
+        ],
+        "text": "weather",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 25,
+            "start": 18,
+            "value": "weather"
+          }
+        ],
+        "text": "let's discuss the weather",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 36,
+            "start": 29,
+            "value": "weather"
+          }
+        ],
+        "text": "i want to tell you about the weather",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 28,
+            "start": 21,
+            "value": "weather"
+          }
+        ],
+        "text": "let's chat about the weather",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 43,
+            "start": 36,
+            "value": "weather"
+          }
+        ],
+        "text": "let's have a conversation about the weather",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 27,
+            "start": 21,
+            "value": "family"
+          }
+        ],
+        "text": "i want to talk about family",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 23,
+            "start": 17,
+            "value": "family"
+          }
+        ],
+        "text": "let's talk about family",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 6,
+            "start": 0,
+            "value": "family"
+          }
+        ],
+        "text": "family talk",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 6,
+            "start": 0,
+            "value": "family"
+          }
+        ],
+        "text": "family",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 20,
+            "start": 14,
+            "value": "family"
+          }
+        ],
+        "text": "let's discuss family",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 34,
+            "start": 28,
+            "value": "family"
+          }
+        ],
+        "text": "i want to tell you about my family",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 23,
+            "start": 17,
+            "value": "family"
+          }
+        ],
+        "text": "let's chat about family",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 41,
+            "start": 35,
+            "value": "family"
+          }
+        ],
+        "text": "let's have a conversation about my family",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 33,
+            "start": 21,
+            "value": "storytelling"
+          }
+        ],
+        "text": "i want to talk about storytelling",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 29,
+            "start": 17,
+            "value": "storytelling"
+          }
+        ],
+        "text": "let's talk about storytelling",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 12,
+            "start": 0,
+            "value": "storytelling"
+          }
+        ],
+        "text": "storytelling talk",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 12,
+            "start": 0,
+            "value": "storytelling"
+          }
+        ],
+        "text": "storytelling",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 26,
+            "start": 14,
+            "value": "storytelling"
+          }
+        ],
+        "text": "let's discuss storytelling",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 22,
+            "start": 17,
+            "value": "storytelling"
+          }
+        ],
+        "text": "i want to tell a story",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 28,
+            "start": 21,
+            "value": "storytelling"
+          }
+        ],
+        "text": "let's tell eachother stories",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 44,
+            "start": 32,
+            "value": "storytelling"
+          }
+        ],
+        "text": "let's have a conversation about storytelling",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 27,
+            "start": 22,
+            "value": "storytelling"
+          }
+        ],
+        "text": "i have an interesting story",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 14,
+            "start": 9,
+            "value": "storytelling"
+          }
+        ],
+        "text": "i have a story to tell you",
+        "intent": "topic_start"
+      },
+      {
+        "entities": [
+          {
+            "entity": "topic",
+            "end": 28,
+            "start": 23,
+            "value": "storytelling"
+          }
+        ],
+        "text": "i want to talk about a story i had",
+        "intent": "topic_start"
+      },
+      {
+        "text": "I am the only child in my family",
+        "intent": "family_intro"
+      },
+      {
+        "text": "I have two brothers",
+        "intent": "family_intro"
+      },
+      {
+        "text": "I have one sister",
+        "intent": "family_intro"
+      },
+      {
+        "text": "I have two siblings",
+        "intent": "family_intro"
+      },
+      {
+        "text": "My parents are divorced",
+        "intent": "family_intro"
+      },
+      {
+        "text": "My father passed away",
+        "intent": "family_intro"
+      },
+      {
+        "text": "I have an older brother",
+        "intent": "family_intro"
+      },
+      {
+        "text": "I'm the oldest in my family",
+        "intent": "family_intro"
+      },
+      {
+        "text": "My brother is a high school teacher",
+        "intent": "family_intro"
+      },
+      {
+        "text": "My parents used to own a small business",
+        "intent": "family_intro"
+      },
+      {
+        "text": "I want to kill myself",
+        "intent": "deflect"
+      },
+      {
+        "text": "I want to commit suicide",
+        "intent": "deflect"
+      },
+      {
+        "text": "I want to end my life",
+        "intent": "deflect"
+      },
+      {
+        "text": "I want to die",
+        "intent": "deflect"
+      },
+      {
+        "text": "I am going to kill myself",
+        "intent": "deflect"
+      },
+      {
+        "text": "thank you",
+        "intent": "thank"
+      },
+      {
+        "text": "thanks a lot",
+        "intent": "thank"
+      },
+      {
+        "text": "thnx",
+        "intent": "thank"
+      },
+      {
+        "text": "thx",
+        "intent": "thank"
+      },
+      {
+        "text": "ty",
+        "intent": "thank"
+      },
+      {
+        "text": "i want to end my life",
+        "intent": "suicide"
+      },
+      {
+        "text": "i want to kill myself",
+        "intent": "suicide"
+      },
+      {
+        "text": "i want to die",
+        "intent": "suicide"
+      },
+      {
+        "text": "i have suicidal thoughts",
+        "intent": "suicide"
+      },
+      {
+        "text": "i've been thinking of suicide",
+        "intent": "suicide"
+      },
+      {
+        "text": "death is the solution",
+        "intent": "suicide"
+      },
+      {
+        "text": "i like to think about death",
+        "intent": "suicide"
+      },
+      {
+        "text": "i feel like dying everyday",
+        "intent": "suicide"
+      },
+      {
+        "text": "i think it is cold",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "it is warm outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "it's cold outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "it is freeze today",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "it's really hot outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "the weather is really nice today",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "it is getting warmer",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "it feels hotter than yesterday",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "the temperature fluctuates all the time",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "i think it is cold outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "It's so cold outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "I am freezing these days",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "It is getting warmer outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "It's an ugly day outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "I wish it wasn't so cold outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "I like winter",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "I prefer summer because it's warm",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "it doesn't look very nice outside",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "i thnk it's going to rain later",
+        "intent": "weather_comment"
+      },
+      {
+        "text": "she is 24 years old",
+        "intent": "friend_info"
+      },
+      {
+        "text": "he lives in Waterloo",
+        "intent": "friend_info"
+      },
+      {
+        "text": "she lives in Waterloo",
+        "intent": "friend_info"
+      },
+      {
+        "text": "he is an engineer",
+        "intent": "friend_info"
+      },
+      {
+        "text": "she works at Google",
+        "intent": "friend_info"
+      },
+      {
+        "text": "her name is Jessica",
+        "intent": "friend_info"
+      },
+      {
+        "text": "he is my best friend",
+        "intent": "friend_info"
+      },
+      {
+        "text": "she is my girlfriend",
+        "intent": "friend_info"
+      },
+      {
+        "text": "Emma studies at the University of Waterloo",
+        "intent": "friend_info"
+      },
+      {
+        "text": "my friend Emma goes to the University of Waterloo",
+        "intent": "friend_info"
+      }
+    ]
+  }
+}
